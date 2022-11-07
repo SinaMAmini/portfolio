@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+
+    inline-size: 30rem;
+    block-size: 40rem;
+
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+
+    background-color: var(--color-gray-40);
+
+    a {
+        text-decoration: none;
+        font-size: 3rem;
+        color: var(--color-gray-10);
+        font-weight: 700;
+    }
+
+    .about {
+        position: absolute;
+        inset-inline-start: 3rem;
+        inset-block-end: 5rem;
+
+        font-size: 2.4rem;
+    }
+}

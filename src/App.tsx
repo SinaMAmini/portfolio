@@ -1,13 +1,15 @@
+import {Home} from './pages/home';
+import {Dialog} from './components/dialog';
 import {useState} from 'react';
-import reactLogo from './assets/react.svg';
-import './App.css';
 
 function App() {
-    const [count, setCount] = useState(0);
+    const [showDialog, setShowDialog] = useState(false);
+    const [dialogProject, setDialogProject] = useState(null);
 
     return (
         <div className="App">
-
+            <Home setShowDialog={setShowDialog} setDialogProject={setDialogProject} />
+            <Dialog showDialog={showDialog} setShowDialog={setShowDialog} project={dialogProject} />
         </div>
     );
 }

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+    --color-gray-100: hsl(0deg 0% 100%);
+    --color-gray-98: hsl(0deg 0% 98%);
+    --color-gray-90: hsl(0deg 0% 90%);
+    --color-gray-80: hsl(0deg 0% 80%);
+    --color-gray-70: hsl(0deg 0% 70%);
+    --color-gray-40: hsl(0deg 0% 40%);
+    --color-gray-30: hsl(0deg 0% 30%);
+    --color-gray-20: hsl(0deg 0% 20%);
+    --color-gray-10: hsl(0deg 0% 10%);
+
+    --color-primary-darker: hsl(0deg 0% 5%);
+    --color-primary-dark: hsl(0deg 0% 9%);
+    --color-primary-normal: hsl(0deg 0% 13%);
+    --color-primary-light: hsl(0deg 0% 17%);
+    --color-primary-lighter: hsl(0deg 0% 21%);
+
+    --color-accent-darker: hsl(0deg 0% 84%);
+    --color-accent-dark: hsl(0deg 0% 88%);
+    --color-accent-normal: hsl(0deg 0% 92%);
+    --color-accent-light: hsl(0deg 0% 96%);
+    --color-accent-lighter: hsl(0deg 0% 100%);
+
+    --color-tertiary-blue: hsl(196deg 93% 47%);
+    --color-tertiary-green: hsl(153deg 91% 56%);
+
+    --success-color: hsl(123deg 38% 57%);
+    --success-color-dark: hsl(123deg 38% 49%);
+
+    --error-color: hsl(4deg 90% 58%);
+    --error-color-dark: hsl(4deg 90% 50%);
+
+    --font-size-primary-heading: 3.6rem;
+    --font-size-secondary-heading: 3rem;
+    --font-size-lrg-paragraph: 2.4rem;
+    --font-size-paragraph: 2rem;
+    --font-size-med-paragraph: 1.6rem;
+    --font-size-sub-paragraph: 1rem;
+
+    --border-radius-small: 0.4rem;
+    --border-radius-normal: 0.8rem;
+    --border-radius-big: 1.2rem;
+
+    --animation-duration-fast: 0.1s;
+    --animation-duration-normal: 0.5s;
+    --animation-duration-slow: 1s;
+
+    --flex-gap-large: 1rem;
+    --flex-gap-medium: 0.5rem;
+    --flex-gap-small: 0.1rem;
+
+    --padding-large: 4rem;
+    --padding-medium: 2rem;
+    --padding-small: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: poppins, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    font-size: 62.5%;
+    color-scheme: dark;
+}
+
+body {
+    min-block-size: 100vh;
+
+    line-height: 1.5;
+
+    padding: 2rem max(calc((100% - 100rem) / 2), 2rem);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--font-size-primary-heading);
+}
+
+h2 {
+    font-size: var(--font-size-secondary-heading);
+}
+
+h3 {
+    font-size: var(--font-size-tertiary-heading);
+}
+
+p {
+    font-size: var(--font-size-lrg-paragraph);
+}
+
+a {
+    font-size: var(--font-size-paragraph);
+    text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+    border: none;
+
+    outline: none;
+
+    font: inherit;
+}
+
+input[type="text"] {
+    inline-size: 100%;
+    border-radius: var(--border-radius-small);
+    padding: var(--padding-small);
+    font-size: var(--font-size-med-paragraph);
+}
+
+input[type="checkbox"] {
+    inline-size: var(--font-size-med-paragraph);
+    block-size: var(--font-size-med-paragraph);
+}
+
+button {
+    background-color: transparent;
+
+    display: inline-flex;
+    align-items: center;
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.8;
+
+    cursor: not-allowed;
+}
