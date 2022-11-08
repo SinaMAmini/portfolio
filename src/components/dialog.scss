@@ -2,7 +2,13 @@
     position: fixed;
     inset: 0;
 
-    background-color: hsla(0, 0%, 0%, 0.3);
+
+    .dialog-bg {
+        position: fixed;
+        inset: 0;
+
+        background-color: hsla(0, 0%, 0%, 0.3);
+    }
 
     .dialog {
         background-color: hsl(240 20% 30%);
@@ -16,6 +22,7 @@
         inset-block-start: 50vh;
         inset-inline-start: 50vw;
         transform: translate(-50%, -50%);
+        z-index: 2;
 
         display: grid;
         grid-template-columns: 1fr;

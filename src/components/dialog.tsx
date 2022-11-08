@@ -14,7 +14,8 @@ export function Dialog({project, showDialog, setShowDialog}: dialogProp) {
     };
 
     return (
-        <div className="dialog-container" style={{display: showDialog ? 'block' : 'none'}} onClick={() => escDialog()}>
+        <div className="dialog-container" style={{display: showDialog ? 'block' : 'none'}}>
+            <div className="dialog-bg" onClick={() => escDialog()}></div>
             <div className="dialog">
                 <h5>Name: </h5>
                 <a href={project?.pageLink}>{project?.projectName}</a>
