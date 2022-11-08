@@ -2,7 +2,7 @@
 
 It's my projects' page in my website:
 
-`https://sina-amini.ir/projects-page`
+[projects-page](https://sina-amini.ir/projects-page)
 
 The goal of this project is showing a UI for my projects list.
 
