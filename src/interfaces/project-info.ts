@@ -1,5 +1,6 @@
 export interface ProjectInfo {
     projectName: string;
+    images: string[];
     pageLink: string;
     frontendDevelopers: Developer[] | null;
     backendDevelopers: Developer[] | null;

@@ -2,10 +2,12 @@ import * as React from 'react';
 import './home.scss';
 import {Card} from '../components/card';
 import {ProjectInfo} from '../interfaces/project-info';
+import {ProjectSection} from '../components/project-section';
 
 const projects: ProjectInfo[] = [
     {
         projectName: 'chess',
+        images: ['/src/assets/images/chess.webp'],
         pageLink: 'chess',
         frontendDevelopers: [{developerName: 'Sina Amini', developerLink: 'https://github.com/SinaMAmini'}],
         backendDevelopers: null,
@@ -16,6 +18,11 @@ const projects: ProjectInfo[] = [
     },
     {
         projectName: 'sweet-taste',
+        images: [
+            '/src/assets/images/sweet-taste/sweet-taste1.webp',
+            '/src/assets/images/sweet-taste/sweet-taste2.webp',
+            '/src/assets/images/sweet-taste/sweet-taste3.webp',
+        ],
         pageLink: 'sweet-taste',
         frontendDevelopers: [
             {developerName: 'Sara Feizi', developerLink: 'https://github.com/sarafeizi'},
@@ -29,6 +36,7 @@ const projects: ProjectInfo[] = [
     },
     {
         projectName: 'NG Store',
+        images: ['/src/assets/images/ng-store/NG-Store1.webp'],
         pageLink: 'https://star-academy.github.io/Summer1401-FE-Team05/',
         frontendDevelopers: [
             {developerName: 'Hessam A. Cheraghi', developerLink: 'https://github.com/HessamCheraghi'},
@@ -45,6 +53,12 @@ const projects: ProjectInfo[] = [
     },
     {
         projectName: 'Data Gate',
+        images: [
+            '/src/assets/images/data-gate/data-gate1.webp',
+            '/src/assets/images/data-gate/data-gate2.webp',
+            '/src/assets/images/data-gate/data-gate3.webp',
+            '/src/assets/images/data-gate/data-gate4.webp',
+        ],
         pageLink: '#',
         frontendDevelopers: [
             {developerName: 'Ata!', developerLink: 'https://github.com/AtaReversei'},
@@ -64,6 +78,7 @@ const projects: ProjectInfo[] = [
     },
     {
         projectName: 'chart',
+        images: ['/src/assets/images/chart.webp'],
         pageLink: 'https://sinamamini.github.io/chart/',
         frontendDevelopers: [{developerName: 'Sina Amini', developerLink: 'https://github.com/SinaMAmini'}],
         backendDevelopers: null,
@@ -82,15 +97,18 @@ type homeProps = {
 export const Home = ({setShowDialog, setDialogProject}: homeProps) => {
     return (
         <div className="projects-container">
+            {/*{projects.map((project) => {*/}
+            {/*    return (*/}
+            {/*        <Card*/}
+            {/*            key={project.projectName}*/}
+            {/*            project={project}*/}
+            {/*            setShowDialog={setShowDialog}*/}
+            {/*            setDialogProject={setDialogProject}*/}
+            {/*        ></Card>*/}
+            {/*    );*/}
+            {/*})}*/}
             {projects.map((project) => {
-                return (
-                    <Card
-                        key={project.projectName}
-                        project={project}
-                        setShowDialog={setShowDialog}
-                        setDialogProject={setDialogProject}
-                    ></Card>
-                );
+                return <ProjectSection key={project.projectName} project={project}></ProjectSection>;
             })}
         </div>
     );

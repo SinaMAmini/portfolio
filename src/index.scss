@@ -82,6 +82,32 @@ body {
     line-height: 1.5;
 
     padding: 2rem max(calc((100% - 100rem) / 2), 2rem);
+
+    background-color: var(--color-primary-darker);
+    background: radial-gradient(
+            circle,
+            transparent 20%,
+            var(--color-primary-darker) 20%,
+            var(--color-primary-darker) 80%,
+            transparent 80%,
+            transparent
+        ),
+        radial-gradient(
+                circle,
+                transparent 20%,
+                var(--color-primary-darker) 20%,
+                var(--color-primary-darker) 80%,
+                transparent 80%,
+                transparent
+            )
+            17.5px 17.5px,
+        linear-gradient(var(--color-accent-darker) 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px,
+        linear-gradient(
+                90deg,
+                var(--color-accent-darker) 1.4000000000000001px,
+                var(--color-primary-darker) 1.4000000000000001px
+            ) -0.7000000000000001px 0;
+    background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
 }
 
 h1,

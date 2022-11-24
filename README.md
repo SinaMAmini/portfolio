@@ -8,7 +8,6 @@ The goal of this project is showing a UI for my projects list.
 
 It's developed by React and Typescript.
 
-
 # Running the project
 
 You can clone project with this command:
