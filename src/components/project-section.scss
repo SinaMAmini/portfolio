@@ -1,7 +1,10 @@
 .project-section {
-    block-size: 100vh;
+    block-size: 90vh;
 
-    background-color: var(--color-primary-normal);
+    background-color: hsla(0deg, 0%, 10%, 0.8);
 
     display: grid;
+
+    padding: var(--padding-large);
+    border-radius: 1rem;
 }
