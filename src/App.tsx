@@ -1,6 +1,6 @@
 import {Home} from './pages/home';
-import {Dialog} from './components/dialog';
 import {useState} from 'react';
+import './App.scss';
 
 function App() {
     const [showDialog, setShowDialog] = useState(false);
@@ -9,7 +9,15 @@ function App() {
     return (
         <div className="App">
             <Home setShowDialog={setShowDialog} setDialogProject={setDialogProject} />
-            <Dialog showDialog={showDialog} setShowDialog={setShowDialog} project={dialogProject} />
+            <div id="picture-frame">
+                <div id="bird">
+                    <div id="body2"></div>
+                    <div id="body1"></div>
+                    <div id="wing-l"></div>
+                    <div id="wing-r"></div>
+                </div>
+                {/*<div id="shadow"></div>*/}
+            </div>
         </div>
     );
 }
