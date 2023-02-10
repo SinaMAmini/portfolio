@@ -8,13 +8,16 @@ type Props = {
 };
 
 export function ProjectSection({project}: Props) {
+    console.log(project);
     return (
         <div className="project-section">
             <h2>
                 <a href={project?.pageLink}>{project?.projectName}</a>
             </h2>
-            <Slider images={project.images}/>
-            <b>Frontend Developers: </b>
+
+            <Slider images={project.images} />
+
+            {project.frontendDevelopers && <b>Frontend Developers: </b>}
             <div className="front-devs-container">
                 {project?.frontendDevelopers?.map((developer) => (
                     <a key={developer.developerLink} href={developer.developerLink}>
@@ -22,8 +25,7 @@ export function ProjectSection({project}: Props) {
                     </a>
                 ))}
             </div>
-
-            <b>Backend Developers: </b>
+            {project.backendDevelopers && <b>Backend Developers: </b>}
             <div className="back-devs-container">
                 {project?.backendDevelopers?.map((developer) => (
                     <a key={developer.developerLink} href={developer.developerLink}>
@@ -31,11 +33,10 @@ export function ProjectSection({project}: Props) {
                     </a>
                 ))}
             </div>
-
-            <b>Frontend Technology: </b>
+            {project.frontendTechnology && <b>Frontend Technology: </b>}
             <span>{project?.frontendTechnology}</span>
 
-            <b>Backend Technology</b>
+            {project.backendTechnology && <b>Backend Technology</b>}
             <span>{project?.backendTechnology}</span>
 
             <b>Sources: </b>
@@ -46,7 +47,6 @@ export function ProjectSection({project}: Props) {
                     </a>
                 ))}
             </div>
-
             <b>About: </b>
             <p>{project?.about}</p>
         </div>

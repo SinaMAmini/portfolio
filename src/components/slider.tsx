@@ -7,7 +7,7 @@ type Props = {
 export const Slider = ({images}: Props) => {
     return (
         <div>
-            <h2>hey there!</h2>
+            <h2>hey there! It's Slider!</h2>
         </div>
     );
 };
