@@ -17,29 +17,29 @@ export function ProjectSection({project}: Props) {
 
             <Slider images={project.images} />
 
-            {project.frontendDevelopers && <b>Frontend Developers: </b>}
-            <div className="front-devs-container">
+            {project.frontendDevelopers && <h5>Frontend Developers: </h5>}
+            {project.frontendDevelopers && <div className="front-devs-container">
                 {project?.frontendDevelopers?.map((developer) => (
                     <a key={developer.developerLink} href={developer.developerLink}>
                         {developer.developerName}
                     </a>
                 ))}
-            </div>
-            {project.backendDevelopers && <b>Backend Developers: </b>}
-            <div className="back-devs-container">
+            </div>}
+            {project.backendDevelopers && <h5>Backend Developers: </h5>}
+            {project.backendDevelopers && <div className="back-devs-container">
                 {project?.backendDevelopers?.map((developer) => (
                     <a key={developer.developerLink} href={developer.developerLink}>
                         {developer.developerName}
                     </a>
                 ))}
-            </div>
-            {project.frontendTechnology && <b>Frontend Technology: </b>}
-            <span>{project?.frontendTechnology}</span>
+            </div>}
+            {project.frontendTechnology && <h5>Frontend Technology: </h5>}
+            {project.frontendTechnology && <span>{project?.frontendTechnology}</span>}
 
-            {project.backendTechnology && <b>Backend Technology</b>}
-            <span>{project?.backendTechnology}</span>
+            {project.backendTechnology && <h5>Backend Technology</h5>}
+            {project.backendTechnology && <span>{project?.backendTechnology}</span>}
 
-            <b>Sources: </b>
+            <h5>Sources: </h5>
             <div className="sources-container">
                 {project?.sources?.map((source) => (
                     <a key={source.sourceLink} href={source.sourceLink}>
@@ -47,7 +47,7 @@ export function ProjectSection({project}: Props) {
                     </a>
                 ))}
             </div>
-            <b>About: </b>
+            <h5>About: </h5>
             <p>{project?.about}</p>
         </div>
     );

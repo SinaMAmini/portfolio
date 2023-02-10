@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './slider.scss'
 
 type Props = {
     images: string[];
@@ -6,7 +7,7 @@ type Props = {
 
 export const Slider = ({images}: Props) => {
     return (
-        <div>
+        <div className="slider">
             <h2>hey there! It's Slider!</h2>
         </div>
     );
