@@ -13,8 +13,6 @@ export const ImageSlider = ({images}: Props) => {
         const interval = setInterval(() => {
             if (imageIndex < images.length) setImageIndex(imageIndex++);
             else setImageIndex(0);
-
-            console.log(imageIndex);
         }, 2000);
 
         return () => clearInterval(interval);

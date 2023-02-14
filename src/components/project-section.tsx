@@ -8,7 +8,6 @@ type Props = {
 };
 
 export function ProjectSection({project}: Props) {
-    console.log(project);
     return (
         <div className="project-section">
             <h2>
