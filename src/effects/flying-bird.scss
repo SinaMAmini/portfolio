@@ -1,0 +1,129 @@
+#picture-frame {
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    width: 10rem;
+    margin-top: 10rem;
+    animation: fly 10s infinite linear;
+
+    cursor: pointer;
+
+    #bird {
+        position: absolute;
+        animation: bob 0.7s infinite cubic-bezier(0.7, 0.7, 0.1, 0.4);
+        div {
+            position: absolute;
+        }
+
+
+        #body1,
+        #body2,
+        #wing-l,
+        #wing-r {
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-style: solid;
+        }
+
+        #body1 {
+            border-width: 1.5rem;
+            border-left-width: 2.5rem;
+            border-right-width: 5.5rem;
+            border-top-color: #333;
+        }
+
+        #body2 {
+            left: 5rem;
+            bottom: 0;
+            border-width: 1rem;
+            border-left-width: .5rem;
+            border-top-width: 0;
+            border-right-width: 1.5rem;
+            border-bottom-color: #777;
+        }
+
+        #wing-l {
+            left: 2.2rem;
+            bottom: 0;
+            border-width: 6rem;
+            border-left-width: 2rem;
+            border-top-width: 0;
+            border-right-width: .6rem;
+            border-bottom-color: #444;
+            animation: flap-l 0.7s infinite;
+        }
+
+        #wing-r {
+            left: 22px;
+            top: 0;
+            border-width: 6rem;
+            border-left-width: 2rem;
+            border-bottom-width: 0;
+            border-right-width: .6rem;
+            border-top-color: #777;
+            animation: flap-r 0.7s infinite;
+        }
+
+    }
+}
+
+
+
+@keyframes flap-r {
+    0%,
+    10% {
+        border-top-width: 6rem;
+    }
+    40%,
+    60% {
+        border-top-width: 1rem;
+    }
+    100% {
+        border-top-width: 6rem;
+    }
+}
+
+@keyframes flap-l {
+    0% {
+        border-bottom-width: 0;
+    }
+    40%,
+    60% {
+        border-bottom-width: 4rem;
+    }
+    100% {
+        border-bottom-width: 0;
+    }
+}
+
+@keyframes fly {
+    0% {
+        left: 0;
+        top: 10rem;
+        transform: scale3d(0.5, 0.5, 1);
+    }
+
+    50% {
+        left: 100%;
+        top: 10rem;
+        transform: scale3d(1, 1, 1);
+    }
+    100%{
+        left: 100%;
+        top: 10rem;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes bob {
+    0% {
+        top: 2.5rem;
+    }
+    50% {
+        top: 0;
+    }
+    100% {
+        top: 2.5rem;
+    }
+}
