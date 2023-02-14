@@ -1,5 +1,5 @@
 .project-section {
-    block-size: 90vh;
+    min-block-size: 90vh;
 
     background-color: hsla(0deg, 0%, 10%, 0.8);
 
@@ -15,45 +15,20 @@
         font-size: 2.4rem;
         font-weight: 400;
     }
-}
 
+    .front-devs-container , .back-devs-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .technology {
+    font-size: 2.4rem;
+    }
+}
 
 @media (min-width: 30em) {
     .project-section {
         grid-template-columns: repeat(2, 1fr);
-
-        //.footer-column {
-        //    &:last-of-type {
-        //        grid-column: 1/-1;
-        //    }
-        //}
-    }
-}
-@media (min-width: 64em) {
-    .project-section {
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 0;
-
-        //.footer-column {
-        //    &:nth-of-type(2) {
-        //        justify-content: flex-end;
-        //    }
-        //
-        //    &:nth-of-type(3) {
-        //        justify-content: center;
-        //    }
-        //
-        //    &:nth-of-type(4) {
-        //        justify-content: flex-start;
-        //    }
-        //
-        //    .footer-logo {
-        //        align-self: center;
-        //    }
-        //
-        //    &:last-of-type {
-        //        grid-column: auto;
-        //    }
-        //}
     }
 }
