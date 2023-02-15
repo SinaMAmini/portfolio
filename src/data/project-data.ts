@@ -1,9 +1,10 @@
 import {ProjectInfo} from "../interfaces/project-info";
+import {IMAGE_FOLDER} from "../utls/URLs";
 
 export const projects: ProjectInfo[] = [
     {
         projectName: 'chess',
-        images: ['src/assets/images/chess.webp'],
+        images: [IMAGE_FOLDER + '/chess.webp'],
         pageLink: 'chess',
         frontendDevelopers: [{developerName: 'Sina Amini', developerLink: 'https://github.com/SinaMAmini'}],
         backendDevelopers: null,
@@ -15,9 +16,9 @@ export const projects: ProjectInfo[] = [
     {
         projectName: 'sweet-taste',
         images: [
-            'src/assets/images/sweet-taste/sweet-taste1.webp',
-            'src/assets/images/sweet-taste/sweet-taste2.webp',
-            'src/assets/images/sweet-taste/sweet-taste3.webp',
+            IMAGE_FOLDER + '/sweet-taste/sweet-taste1.webp',
+            IMAGE_FOLDER + '/sweet-taste/sweet-taste2.webp',
+            IMAGE_FOLDER + '/sweet-taste/sweet-taste3.webp',
         ],
         pageLink: 'sweet-taste',
         frontendDevelopers: [
@@ -32,7 +33,7 @@ export const projects: ProjectInfo[] = [
     },
     {
         projectName: 'NG Store',
-        images: ['src/assets/images/ng-store/NG-Store1.webp'],
+        images: [IMAGE_FOLDER + '/ng-store/NG-Store1.webp'],
         pageLink: 'https://star-academy.github.io/Summer1401-FE-Team05/',
         frontendDevelopers: [
             {developerName: 'Hessam A. Cheraghi', developerLink: 'https://github.com/HessamCheraghi'},
@@ -50,10 +51,10 @@ export const projects: ProjectInfo[] = [
     {
         projectName: 'Data Gate',
         images: [
-            'src/assets/images/data-gate/data-gate1.webp',
-            'src/assets/images/data-gate/data-gate2.webp',
-            'src/assets/images/data-gate/data-gate3.webp',
-            'src/assets/images/data-gate/data-gate4.webp',
+            IMAGE_FOLDER + '/data-gate/data-gate1.webp',
+            IMAGE_FOLDER + '/data-gate/data-gate2.webp',
+            IMAGE_FOLDER + '/data-gate/data-gate3.webp',
+            IMAGE_FOLDER + '/data-gate/data-gate4.webp',
         ],
         pageLink: '#',
         frontendDevelopers: [
@@ -74,7 +75,7 @@ export const projects: ProjectInfo[] = [
     },
     {
         projectName: 'chart',
-        images: ['src/assets/images/chart.webp'],
+        images: [IMAGE_FOLDER + '/chart.webp'],
         pageLink: 'https://sinamamini.github.io/chart/',
         frontendDevelopers: [{developerName: 'Sina Amini', developerLink: 'https://github.com/SinaMAmini'}],
         backendDevelopers: null,
@@ -85,7 +86,7 @@ export const projects: ProjectInfo[] = [
     },
     {
         projectName: 'Portfolio',
-        images: ['src/assets/images/portfolio.webp'],
+        images: [IMAGE_FOLDER + '/portfolio.webp'],
         pageLink: '#',
         frontendDevelopers: [{developerName: 'Sina Amini', developerLink: 'https://github.com/SinaMAmini'}],
         backendDevelopers: null,

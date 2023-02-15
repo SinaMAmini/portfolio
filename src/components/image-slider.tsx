@@ -8,6 +8,7 @@ type Props = {
 };
 
 export const ImageSlider = ({images}: Props) => {
+    console.log(images)
     let [imageIndex, setImageIndex] = useState(0);
     useEffect(() => {
         const interval = setInterval(() => {
