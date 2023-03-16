@@ -8,8 +8,8 @@ type Props = {
 };
 
 export const ImageSlider = ({images}: Props) => {
-    console.log(images)
     let [imageIndex, setImageIndex] = useState(0);
+
     useEffect(() => {
         const interval = setInterval(() => {
             if (imageIndex < images.length) setImageIndex(imageIndex++);
@@ -18,6 +18,7 @@ export const ImageSlider = ({images}: Props) => {
 
         return () => clearInterval(interval);
     });
+
     return (
         <div className="slider">
             <Slider activeIndex={imageIndex} threshHold={100} transition={0.5} scaleOnDrag={true}>
